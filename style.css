@@ -88,6 +88,13 @@ a:hover {
   margin-bottom: 50px;
 }
 
+.td-holder {
+  width: 50%;
+  border: none;
+  margin-bottom: 50px;
+  vertical-align: top;
+}
+
 .course-num {
   margin-bottom: 0px;
 }
@@ -109,4 +116,8 @@ a:hover {
 .course-td {
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
+}
+
+.dss-table {
+  height: 100%;
 }
