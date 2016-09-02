@@ -5,14 +5,111 @@
 
   <head>
     <link rel="stylesheet" href="style.css">
-    <title>Force Add Request</title>
+    <title>Force Add</title>
   </head>
-
-
 
   <body>
     <div class="main-container" max-width="500px">
-      <h1>Force Add</h1>
+      <h1>Force Add Request</h1>
+      <form method="post" action="localhost">
+        <input type="hidden" name="department" value="BIT" />
+        <label>PID:<br />
+          <input name="pid" type="text" size="20"  required/>
+        </label>
+        <br />
+        <br />
+        <label>VT Email:<br />
+          <input name="email" type="email" placeholder="pid@vt.edu" required/>
+        </label>
+        <br />
+        <br />
+        <label>Phone Number:<br />
+          <input name="phone" type="tel" placeholder="( - - - )  - - -  - - - -" required/>
+        </label>
+        <br />
+        <br />
+        <label>Request Date:<br />
+          <input name="date" type="date" required />
+        </label>
+        <br />
+        <br />
+        <label>Request Time:<br />
+          <input name="time" type="time" required />
+        </label>
+        <br />
+        <br />
+        <label>Requested CRN:<br />
+          <input type="text" placeholder="Select a CRN" list="crnList" required />
+          <datalist id="crnList">
+            <option value="11111">
+            <option value="22222">
+            <option value="33333">
+          </datalist>
+        </label>
+        <p>Requested Semester:<br />
+          <label>
+            <input name="semesterRequest" type="radio" value="spring"  /> Spring
+          </label>
+          <br />
+          <label>
+            <input name="semesterRequest" type="radio" value="summerI"  /> Summer I
+          </label>
+          <br />
+          <label>
+            <input name="semesterRequest" type="radio" value="summerII"  /> Summer II
+          </label>
+          <br />
+          <label>
+            <input name="semesterRequest" type="radio" value="fall"  /> Fall
+          </label>
+          <br />
+          <label>
+            <input name="semesterRequest" type="radio" value="winter"  /> Winter
+          </label>
+        </p>
+        <p>
+          <label>Requested Year:<br />
+            <select name="yearRequest">
+              <option selected>
+                2016
+              </option>
+              <option>
+                2017
+              </option>
+            </select>
+          </label>
+        </p>
+        <p>Reason for Request:<br />
+          <label>
+            <input name="reasons" type="checkbox" value="fullclass"  /> Class is Full
+          </label>
+          <br />
+          <label>
+            <input name="reasons" type="checkbox" value="prereqs"  /> Prereqs need to be waived.
+          </label>
+        </p>
+        <p>
+          <input type="submit" value="Submit"  />
+          <input type="reset" value="Clear"  />
+        </p>
+      </form>
+    </div>
+    <div class="footer-container">
+      <table class="footer">
+        <tr class="footer-tr">
+          <td class="footer-td">
+            <a href="index.html">Home</a>
+          </td>
+          <td class="footer-td">
+            <a href="courses.html">Courses</a>
+          </td>
+          <td class="footer-td">
+            <a href="force-add.html">Force Add</a>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <br>
     </div>
   </body>
 </html>
