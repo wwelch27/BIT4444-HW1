@@ -36,12 +36,35 @@ body {
 
 .footer-td {
   border: none;
-  width: 33.33%;
+  width: 25%;
   text-align: center;
 }
 
 .intro-head {
   margin-bottom:0px;
+}
+
+.compare-head {
+  margin-bottom:0px;
+}
+
+.compare-p {
+  text-indent: 30px;
+  padding: 0px 10px;
+}
+
+.compare-text {
+  padding: 0px 10px;
+}
+
+.compare-foot {
+  margin: 0 10;
+}
+
+.compare-sec {
+  width: 50%;
+  float: left;
+  margin-bottom: 15px;
 }
 
 .undergrad-head {
@@ -119,4 +142,27 @@ a:hover {
 
 .dss-table {
   height: 100%;
+}
+
+#force-add-table {
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+#force-add-td {
+  vertical-align: top;
+  border: none;
+  width: 220px;
+  height: auto;
+}
+
+.more-info {
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.more-info-links {
+  font-size: 13px;
 }
